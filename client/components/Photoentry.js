@@ -7,7 +7,7 @@ var PhotoEntry = ({photos, handleSearchParamChange}) => (
 	<div className="smallPhotos">
 	{photos.map((photo, i) =>
 		<Fade duration={.8}>
-     <div key={i}>
+     <div>
        <a href={photo.url}>
          <img className="smallPhotoItem" src={photo.multimedia[2].url} />
        </a>
